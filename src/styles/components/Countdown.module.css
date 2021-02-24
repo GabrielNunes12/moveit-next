@@ -49,4 +49,9 @@
   border-radius: 5px;
   background: var(--blue);
   color: var(--white);
+  transition: background-color 0.2s;
+}
+
+.countdownButton:hover {
+  background: var(--blue-dark);
 }
