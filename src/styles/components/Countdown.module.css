@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   box-sizing: 0.5rem;
-  width: 5rem;
+  width: 45%;
   font-size: 3rem;
   font-family: Rajdhani;
   font-weight: 600;
@@ -37,7 +37,7 @@
 }
 
 .countdownButton {
-  width: 100%;
+  width: 45%;
   height: 5rem;
   margin-top: 2rem;
   font-size: 1.25rem;
