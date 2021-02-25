@@ -58,5 +58,15 @@
     "type": "body",
     "description": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
     "amount": 90
+  },
+  {
+    "type": "body",
+    "description": "Vá para o lado de fora de sua residencia e coma muita terra por 5 minutos",
+    "amount": 90
+  },
+  {
+    "type": "body",
+    "description": "Tire sua roupa e da uma corridinha em volta do quarteirão",
+    "amount": 80
   }
 ]
