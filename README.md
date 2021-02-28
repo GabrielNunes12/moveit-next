@@ -42,6 +42,7 @@ $ yarn install
 
 # Run Aplication
 $ yarn dev
+
 Go to http://localhost:3000/ to see the result.
 
 
