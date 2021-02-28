@@ -8,6 +8,9 @@ import Head from 'next/head';
 import styles from '../styles/pages/Home.module.css';
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from "../contexts/ChallengesContexts";
+import { useState } from "react";
+import styled, { ThemeProvider } from "styled-components";
+import {lightTheme, darkTheme, GlobalStyles } from '../styles/theme';
 
 interface HomeProps {
   level: number
@@ -16,32 +19,42 @@ interface HomeProps {
 }
 
 export default function Home( props: HomeProps) {
-  return (
-    <ChallengesProvider 
-      level={props.level} 
-      currentExperience={props.currentExperience} 
-      challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container}>
-        <Head> 
-          <title>Moveit App</title>
-        </Head>
-        <ExperienceBar/>
+  const [theme, setTheme] = useState("light");
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile/>
-              <CompletedChallenges />
-              <Countdown/>
-            </div>
-            <div>
-              <ChallengeBox/>
-            </div>
-          </section>
-        </CountdownProvider>
-      </div>
-    </ChallengesProvider>
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
+  return (
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyles/>
+      <button onClick={() => themeToggler()}><img src="/logo.svg" alt="Move.it"/></button>
+      <ChallengesProvider 
+        level={props.level} 
+        currentExperience={props.currentExperience} 
+        challengesCompleted={props.challengesCompleted}
+      >
+        <div className={styles.container}>
+          <Head> 
+            <title>Moveit App</title>
+          </Head>
+          <ExperienceBar/>
+
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile/>
+                <CompletedChallenges />
+                <Countdown/>
+              </div>
+              <div>
+                <ChallengeBox/>
+              </div>
+            </section>
+          </CountdownProvider>
+        </div>
+      </ChallengesProvider>
+    </ThemeProvider>
   )
 }
 export const getServerSideProps: GetServerSideProps = async context => {
