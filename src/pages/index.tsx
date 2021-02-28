@@ -28,7 +28,10 @@ export default function Home( props: HomeProps) {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles/>
-      <button onClick={() => themeToggler()}><img src="/logo.svg" alt="Move.it"/></button>
+      <label className="switch">
+        <input type="checkbox" onClick={themeToggler}/>
+        <span className="slider round"></span>
+      </label>
       <ChallengesProvider 
         level={props.level} 
         currentExperience={props.currentExperience} 
