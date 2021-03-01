@@ -6,7 +6,7 @@ Move It
 
 English 
 
-The NLW #4 project. Built with ❤︎ by Gabriel Nunese and contributors
+The NLW #4 project. Built with ❤︎ by Gabriel Nunes and contributors
 
 📌 Table of Contents
 Demo Website
@@ -18,10 +18,10 @@ Contributing
 License
 
  
-👀 Demo Website
+👀 Demo Website <br/>
 👉 demo: https://moveit-chi-ten.vercel.app/
 
-💻 Technologies
+💻 Technologies <br/>
 This project was made using the follow technologies:
 
 Typescript <br/>
@@ -30,20 +30,20 @@ Next.js <br/>
 js-cookie <br/>
 Styled-components <br/>
 
-🚀 Features
-Pomodoro timer.
+🚀 Features <br/>
+Pomodoro timer. <br/>
 Help to get up of chair and make some exercise.
 
-👷 How to run
-# Clone Repository
+👷 How to run <br/>
+# Clone Repository <br/>
 $ git clone https://github.com/GabrielNunes12/moveit-next.git
 
-💻 Run Web Project
-# Install Dependencies
-$ yarn install
+💻 Run Web Project <br/>
+# Install Dependencies <br/>
+$ yarn install <br/>
 
-# Run Aplication
-$ yarn dev
+# Run Aplication <br/>
+$ yarn dev <br/>
 
 Go to http://localhost:3000/ to see the result.
 
