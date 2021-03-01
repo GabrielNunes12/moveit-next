@@ -24,9 +24,11 @@ License
 💻 Technologies
 This project was made using the follow technologies:
 
-Typescript
-React
-Next.js
+Typescript <br/>
+React <br/>
+Next.js <br/>
+js-cookie <br/>
+Styled-components <br/>
 
 🚀 Features
 Pomodoro timer.
